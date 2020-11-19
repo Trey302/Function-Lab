@@ -21,8 +21,8 @@ function palindrome(str) {
   palindrome("A man, a plan, a canal. Panama");
 
 //   Prompt 4
-function alphaOrder(order)
+function alphaOrder(Order)
   {
-return order.split('').sort().join('');
+return Order.split('').sort().join('');
   }
 console.log(alphabet_order("webmaster"));
