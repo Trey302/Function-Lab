@@ -4,19 +4,12 @@ function greeting(){
 }
 
 // Prompt 2
-const num = 302
-
- function reversedNum(num) {
-    return (
-      parseFloat(
-        num
-          .toString()
-          .split('')
-          .reverse()
-          .join('')
-      ) * Math.sign(num)
-    )                 
-  }
+function reverse(x)
+{
+	x = x + "";
+	return x.split("").reverse().join("");
+}
+console.log(reverse(32243));
 
 // Prompt 3
 function palindrome(str) {
@@ -26,3 +19,10 @@ function palindrome(str) {
     return reverseStr === lowRegStr;
   }
   palindrome("A man, a plan, a canal. Panama");
+
+//   Prompt 4
+function alphaOrder(order)
+  {
+return order.split('').sort().join('');
+  }
+console.log(alphabet_order("webmaster"));
