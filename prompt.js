@@ -37,12 +37,29 @@ changeToLowerCase("SaLly SeLls SeA ShelLs")
 // Prompt 6
 function uppercase(str)
 {
-  var array1 = str.split(' ');
-  var newarray1 = [];
+  let array1 = str.split(' ');
+  let newarray1 = [];
     
-  for(var x = 0; x < array1.length; x++){
+  for(let x = 0; x < array1.length; x++){
       newarray1.push(array1[x].charAt(0).toUpperCase()+array1[x].slice(1));
   }
   return newarray1.join(' ');
 }
 console.log(uppercase("sally sells sea shells"));
+
+// Prompt 7
+function find_longest_word(str)
+{
+  let array = str.match(/\w[a-z]{0,}/gi);
+  let result = array[0];
+
+  for(var x = 1 ; x < array.length ; x++)
+  {
+    if(result.length < array[x].length)
+    {
+    result = array[x];
+    } 
+  }
+  return result;
+}
+console.log(find_longest_word("Welcome to the developmental shop provided by Code Differently"));
