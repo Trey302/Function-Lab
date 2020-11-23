@@ -53,7 +53,7 @@ function find_longest_word(str)
   let array = str.match(/\w[a-z]{0,}/gi);
   let result = array[0];
 
-  for(var x = 1 ; x < array.length ; x++)
+  for(let x = 1 ; x < array.length ; x++)
   {
     if(result.length < array[x].length)
     {
