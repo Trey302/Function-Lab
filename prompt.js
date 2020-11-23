@@ -72,8 +72,24 @@
 // multiply(4, 8)
 
 // Prompt 9
-let myColor = ["Red, Green, Yellow, Blue"]
+// let myColor = ["Red, Green, Yellow, Blue"]
 
-for (let i = 0; i < myColor.length; i++) {
-    console.log(`${myColor[i]}`)
-};
+// for (let i = 0; i < myColor.length; i++) {
+//     console.log(`${myColor[i]}`)
+// };
+
+// Prompt 10
+function howManyRepeated(str){
+    const result = [];
+    const strArr = str.toLowerCase().split("").sort().join("").match(/(.)\1+/g);
+    
+    if (strArr != null) {
+      strArr.forEach((elem) => {
+        result.push(elem[0]);
+      });
+    }
+    return result;
+  }
+  console.log(...howManyRepeated(str));
+
+  
