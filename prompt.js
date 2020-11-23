@@ -92,4 +92,13 @@ function howManyRepeated(str){
   }
   console.log(...howManyRepeated(str));
 
+//   Bonus
+function calculateDogAge(age) {
+    const dogYears = 7*age;
+    console.log("Your doggie is " + dogYears + " years old in dog years!");
+}
+
+calculateDogAge(3);
+calculateDogAge(7);
+calculateDogAge(12);
   
