@@ -63,3 +63,10 @@ function find_longest_word(str)
   return result;
 }
 console.log(find_longest_word("Welcome to the developmental shop provided by Code Differently"));
+
+// Prompt 8
+function multiply(a, b){
+  console.log( a * b)
+}
+
+multiply(4, 8)
