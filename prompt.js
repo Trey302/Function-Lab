@@ -32,4 +32,4 @@ function changeToLowerCase(x){
  console.log(x.toLowerCase());
 }
 
-changeToLowerCase("HELLO")
+changeToLowerCase("SaLly SeLls SeA ShelLs")
