@@ -1,7 +1,8 @@
 // // Prompt 1
-// function greeting(){
-//     console.log("Hey there")
+// function greeting(x){
+//     console.log(x)
 // }
+// greeting("Hey there")
 
 // // Prompt 2
 // function reverse(x)
